@@ -133,6 +133,69 @@ df['gdp_percentile'] = egen.pc(df['gdp'])
 | `egen newvar = count(var), by(group)` | `df['newvar'] = egen.count(df['var'], by=df['group'])` |
 | `egen newvar = mean(var), by(group)` | `df['newvar'] = egen.mean(df['var'], by=df['group'])` |
 
+## 🚀 Roadmap & Future Features
+
+PyEgen is actively developed with plans to expand functionality in upcoming versions. Here's what's on the horizon:
+
+### 📋 Version 0.2.0 (Next Release)
+**Enhanced egen Functions**
+- **`seq()`** - Generate sequence numbers (1, 2, 3, ...) and custom sequences
+- **`cut()`** - Create categorical variables from continuous data with custom breakpoints
+- **`recode()`** - Recode values based on conditions (like Stata's recode command)
+- **`std()`** - Standardize variables (z-scores) with optional group-wise standardization
+- **`pctile()`** - Calculate specific percentiles (25th, 75th, 90th, etc.)
+
+**Performance & Usability**
+- **Improved error handling** with more informative error messages
+- **Performance optimizations** for large datasets (10M+ rows)
+- **Better missing value handling** with flexible options
+- **Enhanced documentation** with more real-world examples
+
+### 📈 Version 0.3.0 (Medium-term)
+**Advanced Data Operations**
+- **`bysort` syntax sugar** - Simplified group operations with Stata-like syntax
+- **`diff()` and `lag()`** - Time series operations for panel data
+- **`egen modes()`** - Find modal values within groups
+- **`egen total()` variations** - Cumulative sums, running totals
+- **Data validation functions** - Automatic data quality checks
+
+**Integration Features**
+- **Categorical data support** - Enhanced handling of pandas categorical types
+- **DateTime operations** - Date-based grouping and time series functions
+- **Memory optimization** - Efficient processing of large datasets
+- **Export utilities** - Direct integration with popular data formats
+
+### 🔮 Version 1.0.0 (Long-term Vision)
+**Comprehensive Stata Migration**
+- **`tabulate` equivalents** - Cross-tabulation and frequency tables
+- **`margins` functionality** - Marginal effects and predictions
+- **`collapse` operations** - Data aggregation with multiple statistics
+- **Label handling** - Variable and value labels (Stata-style metadata)
+
+**Ecosystem Integration**
+- **Jupyter notebook magic commands** - `%%pyegen` cell magic for easier usage
+- **Integration with popular packages** - scikit-learn, statsmodels, plotly
+- **Cloud computing support** - Optimizations for Dask and Ray
+- **Educational resources** - Interactive tutorials and case studies
+
+### 💡 Community-Driven Features
+
+We're always looking for community input! Planned features based on user feedback:
+
+- **Custom function plugins** - Allow users to contribute domain-specific functions
+- **Performance benchmarking** - Tools to compare PyEgen vs. native pandas performance
+- **Migration assistant** - Tools to semi-automatically convert Stata .do files
+- **Academic paper examples** - Replications of common econometric analyses
+
+### 🎯 Why These Features Matter
+
+**For Researchers**: Smoother transition from Stata to Python with familiar syntax
+**For Data Scientists**: Powerful data manipulation without learning new paradigms  
+**For Educators**: Teaching data analysis with consistent, intuitive functions
+**For Performance**: Optimized operations that scale from small datasets to big data
+
+Want to see a specific feature prioritized? **Open an issue** or start a **discussion** on our GitHub repository!
+
 ## 🤝 Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
