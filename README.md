@@ -8,7 +8,7 @@
 
 PyEgen brings the power and convenience of Stata's `egen` (extended generate) command to Python pandas DataFrames. If you're a researcher transitioning from Stata to Python, this package will make your data manipulation tasks much more familiar and efficient.
 
-## 🚀 Key Features
+##  Key Features
 
 - **Familiar Syntax**: Stata-like syntax for data manipulation
 - **Pandas Integration**: Seamless integration with pandas DataFrames  
@@ -16,13 +16,13 @@ PyEgen brings the power and convenience of Stata's `egen` (extended generate) co
 - **Comprehensive**: Covers most commonly used `egen` functions
 - **Easy to Use**: Simple, intuitive API
 
-## 📦 Installation
+##  Installation
 
 ```bash
 pip install pyegen
 ```
 
-## 🎯 Quick Start
+##  Quick Start
 
 ```python
 import pandas as pd
@@ -52,7 +52,7 @@ df['tag'] = egen.tag(df, ['group'])
 df['count_by_group'] = egen.count(df['value1'], by=df['group'])
 ```
 
-## 📚 Available Functions
+##  Available Functions
 
 ### Basic Functions
 - **`rank(series, method='average')`** - Rank values (like Stata's `egen rank`)
@@ -122,7 +122,7 @@ df['gdp_rank_by_year'] = egen.rank(df['gdp'], by=df['year'])  # Ranking within y
 df['gdp_percentile'] = egen.pc(df['gdp'])
 ```
 
-## 🔄 Stata to Python Translation Guide
+##  Stata to Python Translation Guide
 
 | Stata Command | PyEgen Equivalent |
 |---------------|-------------------|
