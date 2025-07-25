@@ -78,7 +78,7 @@ df['count_by_group'] = egen.count(df['value1'], by=df['group'])
 - **`pc(series, by=None)`** - Calculate percentiles
 - **`iqr(series, by=None)`** - Interquartile range
 
-## 💡 Detailed Examples
+##  Detailed Examples
 
 ### Working with Missing Values
 ```python
@@ -133,11 +133,11 @@ df['gdp_percentile'] = egen.pc(df['gdp'])
 | `egen newvar = count(var), by(group)` | `df['newvar'] = egen.count(df['var'], by=df['group'])` |
 | `egen newvar = mean(var), by(group)` | `df['newvar'] = egen.mean(df['var'], by=df['group'])` |
 
-## 🚀 Roadmap & Future Features
+##  Roadmap & Future Features
 
 PyEgen is actively developed with plans to expand functionality in upcoming versions. Here's what's on the horizon:
 
-### 📋 Version 0.2.0 (Next Release)
+###  Version 0.2.0 (Next Release)
 **Enhanced egen Functions**
 - **`seq()`** - Generate sequence numbers (1, 2, 3, ...) and custom sequences
 - **`cut()`** - Create categorical variables from continuous data with custom breakpoints
@@ -151,7 +151,7 @@ PyEgen is actively developed with plans to expand functionality in upcoming vers
 - **Better missing value handling** with flexible options
 - **Enhanced documentation** with more real-world examples
 
-### 📈 Version 0.3.0 (Medium-term)
+###  Version 0.3.0 (Medium-term)
 **Advanced Data Operations**
 - **`bysort` syntax sugar** - Simplified group operations with Stata-like syntax
 - **`diff()` and `lag()`** - Time series operations for panel data
@@ -178,7 +178,7 @@ PyEgen is actively developed with plans to expand functionality in upcoming vers
 - **Cloud computing support** - Optimizations for Dask and Ray
 - **Educational resources** - Interactive tutorials and case studies
 
-### 💡 Community-Driven Features
+###  Community-Driven Features
 
 We're always looking for community input! Planned features based on user feedback:
 
@@ -187,7 +187,7 @@ We're always looking for community input! Planned features based on user feedbac
 - **Migration assistant** - Tools to semi-automatically convert Stata .do files
 - **Academic paper examples** - Replications of common econometric analyses
 
-### 🎯 Why These Features Matter
+###  Why These Features Matter
 
 **For Researchers**: Smoother transition from Stata to Python with familiar syntax
 **For Data Scientists**: Powerful data manipulation without learning new paradigms  
@@ -208,17 +208,17 @@ pip install -e ".[dev]"
 python -m pytest tests/
 ```
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Inspired by Stata's `egen` command
 - Built on the excellent pandas library
 - Thanks to the open-source community for feedback and contributions
 
-## 📞 Support
+##  Support
 
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/brycewang-stanford/pyegen/issues)
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/brycewang-stanford/pyegen/discussions)
