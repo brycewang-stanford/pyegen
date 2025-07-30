@@ -3,9 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.venv_egen 
 
 # 
 pyegen/PROJECT_SUMMARY.md
+EXTENDED_FEATURES.md
 
 # C extensions
 *.so

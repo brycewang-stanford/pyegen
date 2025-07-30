@@ -15,6 +15,14 @@ from .core import (
     rowcount,
     rowsd,
     
+    # New row-wise functions
+    rowfirst,
+    rowlast,
+    rowmedian,
+    rowmiss,
+    rownonmiss,
+    rowpctile,
+    
     # Grouping functions
     tag,
     count,
@@ -23,6 +31,27 @@ from .core import (
     max,
     min,
     sd,
+    
+    # Statistical functions
+    median,
+    mode,
+    kurt,
+    skew,
+    mad,
+    mdev,
+    pctile,
+    std,
+    total,
+    
+    # Utility functions
+    anycount,
+    anymatch,
+    anyvalue,
+    concat,
+    cut,
+    diff,
+    ends,
+    fill,
     
     # Advanced functions
     seq,
@@ -46,6 +75,14 @@ __all__ = [
     "rowcount",
     "rowsd",
     
+    # New row-wise functions
+    "rowfirst",
+    "rowlast", 
+    "rowmedian",
+    "rowmiss",
+    "rownonmiss",
+    "rowpctile",
+    
     # Grouping functions
     "tag",
     "count",
@@ -54,6 +91,27 @@ __all__ = [
     "max",
     "min", 
     "sd",
+    
+    # Statistical functions
+    "median",
+    "mode",
+    "kurt",
+    "skew",
+    "mad",
+    "mdev",
+    "pctile",
+    "std",
+    "total",
+    
+    # Utility functions
+    "anycount",
+    "anymatch",
+    "anyvalue",
+    "concat",
+    "cut",
+    "diff",
+    "ends",
+    "fill",
     
     # Advanced functions
     "seq",
