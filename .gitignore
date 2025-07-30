@@ -8,6 +8,7 @@ __pycache__/
 # 
 pyegen/PROJECT_SUMMARY.md
 EXTENDED_FEATURES.md
+# TEST_REPORT.md
 
 # C extensions
 *.so

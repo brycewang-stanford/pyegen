@@ -1139,7 +1139,8 @@ def ends(series: pd.Series, punct: str = " ", trim: bool = False,
     """
     _validate_series(series)
     
-    if sum([head, last, tail]) != 1:
+    # Use builtins.sum to avoid conflict with pyegen.sum()
+    if __builtins__['sum']([head, last, tail]) != 1:
         raise ValueError("Exactly one of head, last, or tail must be True")
     
     def extract_part(s):
