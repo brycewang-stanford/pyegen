@@ -1,7 +1,3 @@
-# ⚠️ ARCHIVED - This repository is no longer maintained
-
-**All functionality has been moved to [Py-Stata-Commands](https://github.com/brycewang-stanford/Py-Stata-Commands)**
-
 ---
 
 # PyEgen
