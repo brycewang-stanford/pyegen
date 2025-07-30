@@ -5,7 +5,7 @@ This package provides Stata-style data manipulation functions for pandas DataFra
 making it easier for researchers to transition from Stata to Python.
 """
 
-__version__ = "0.2.2"
+__version__ = "0.2.3"
 
 from .core import (
     # Basic functions
